@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { rps } from "../lib/rpsls.js";
+import { rps } from "./lib/rpsls.js";
 import minimist from "minimist";
 
 const args = minimist(process.argv.slice(2));
@@ -9,7 +9,7 @@ if (args.h || args.help) {
   process.exit(0);
 }
 
-if (args.r || args.rule) {
+if (args.r || args.rules) {
   printrl();
   process.exit(0);
 }
